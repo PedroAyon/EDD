@@ -10,8 +10,8 @@ public class U2_Actividad2 {
 
     public static void main(String[] args) {
         System.out.println("Revertir string 'abcdefg' -> " + revertirString("abcdefg"));
-        System.out.print("Serie fibonacci -> " + fibonacciN1 + " " + fibonacciN2);
-        serieFibonacci(10);
+        System.out.print("Serie fibonacci hasta 12 -> " + fibonacciN1 + " " + fibonacciN2);
+        serieFibonacci(8);
         System.out.println();
         System.out.println("Revertir número 12345 -> " + revertirNumero(12345));
         System.out.println("Potencia de 5 elevado a la 4ta potencia -> " + potenciar(5, 4));
@@ -37,8 +37,7 @@ public class U2_Actividad2 {
 
     public static int revertirNumero(int numero) {
         if (numero < 10) return numero;
-        int log10Num = (int) (Math.log10(numero));
-        return numero % 10 * (int) Math.pow(10, log10Num) + revertirNumero(numero / 10);
+        return numero % 10 * (int) Math.pow(10, (int) (Math.log10(numero))) + revertirNumero(numero / 10);
     }
 
     public static int potenciar(int base, int potencia) {
@@ -55,7 +54,7 @@ public class U2_Actividad2 {
     }
 
     public static int sumaElementosArreglo(int[] arreglo, int longitud) {
-        if (longitud == 1) return arreglo[0];
+        if (longitud == 0) return 0;
         return arreglo[longitud - 1] + sumaElementosArreglo(arreglo, longitud - 1);
     }
 }
