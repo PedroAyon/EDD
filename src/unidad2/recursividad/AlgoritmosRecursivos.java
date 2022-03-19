@@ -1,4 +1,4 @@
-package unidad1.recursividad;
+package unidad2.recursividad;
 
 /**
  * @author Pedro Ayon

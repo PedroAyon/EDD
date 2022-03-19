@@ -39,6 +39,9 @@ public class Main {
 
     public static void stackOpt(int opt) {
         switch (opt) {
+            case 0 -> {
+                return;
+            }
             case 1 -> {
                 System.out.print("Element: ");
                 stack.push(scanner.nextInt());

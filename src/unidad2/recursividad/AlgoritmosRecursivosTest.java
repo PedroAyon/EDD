@@ -1,4 +1,4 @@
-package unidad1.recursividad;
+package unidad2.recursividad;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
