@@ -1,0 +1,207 @@
+Stack size: 10
+Select an option:
+1  - push
+2  - last element
+3  - top
+4  - pop
+5  - clear stack
+6  - is empty
+7  - is full
+8  - size
+9  - search
+10 - invert
+11 - print elements
+0  - exit
+1
+Element: 1
+
+Select an option:
+1  - push
+2  - last element
+3  - top
+4  - pop
+5  - clear stack
+6  - is empty
+7  - is full
+8  - size
+9  - search
+10 - invert
+11 - print elements
+0  - exit
+1
+Element: 2
+
+Select an option:
+1  - push
+2  - last element
+3  - top
+4  - pop
+5  - clear stack
+6  - is empty
+7  - is full
+8  - size
+9  - search
+10 - invert
+11 - print elements
+0  - exit
+1
+Element: 3
+
+Select an option:
+1  - push
+2  - last element
+3  - top
+4  - pop
+5  - clear stack
+6  - is empty
+7  - is full
+8  - size
+9  - search
+10 - invert
+11 - print elements
+0  - exit
+2
+3
+
+Select an option:
+1  - push
+2  - last element
+3  - top
+4  - pop
+5  - clear stack
+6  - is empty
+7  - is full
+8  - size
+9  - search
+10 - invert
+11 - print elements
+0  - exit
+6
+false
+
+Select an option:
+1  - push
+2  - last element
+3  - top
+4  - pop
+5  - clear stack
+6  - is empty
+7  - is full
+8  - size
+9  - search
+10 - invert
+11 - print elements
+0  - exit
+11
+1 -> 2 -> 3
+
+Select an option:
+1  - push
+2  - last element
+3  - top
+4  - pop
+5  - clear stack
+6  - is empty
+7  - is full
+8  - size
+9  - search
+10 - invert
+11 - print elements
+0  - exit
+9
+Target: 2
+Found!
+
+Select an option:
+1  - push
+2  - last element
+3  - top
+4  - pop
+5  - clear stack
+6  - is empty
+7  - is full
+8  - size
+9  - search
+10 - invert
+11 - print elements
+0  - exit
+9
+Target: 10
+Not found.
+
+Select an option:
+1  - push
+2  - last element
+3  - top
+4  - pop
+5  - clear stack
+6  - is empty
+7  - is full
+8  - size
+9  - search
+10 - invert
+11 - print elements
+0  - exit
+10
+
+Select an option:
+1  - push
+2  - last element
+3  - top
+4  - pop
+5  - clear stack
+6  - is empty
+7  - is full
+8  - size
+9  - search
+10 - invert
+11 - print elements
+0  - exit
+11
+3 -> 2 -> 1
+
+Select an option:
+1  - push
+2  - last element
+3  - top
+4  - pop
+5  - clear stack
+6  - is empty
+7  - is full
+8  - size
+9  - search
+10 - invert
+11 - print elements
+0  - exit
+5
+
+Select an option:
+1  - push
+2  - last element
+3  - top
+4  - pop
+5  - clear stack
+6  - is empty
+7  - is full
+8  - size
+9  - search
+10 - invert
+11 - print elements
+0  - exit
+11
+Empty stack.
+
+Select an option:
+1  - push
+2  - last element
+3  - top
+4  - pop
+5  - clear stack
+6  - is empty
+7  - is full
+8  - size
+9  - search
+10 - invert
+11 - print elements
+0  - exit
+0
