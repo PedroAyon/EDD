@@ -11,12 +11,12 @@ public class Stack<E> {
     private int top = -1;
     private final int size;
 
-    Stack(int size) {
+    public Stack(int size) {
         this.size = size;
         this.array = new ArrayList<>(size);
     }
 
-    void push(E element) {
+    public void push(E element) {
         if (top + 1 == size) {
             System.out.println("Stack overflow.");
             return;
@@ -26,7 +26,7 @@ public class Stack<E> {
         else array.add(element);
     }
 
-    E lastElement() {
+    public E lastElement() {
         if (isEmpty()) {
             System.out.println("Empty stack");
             return null;
@@ -34,37 +34,39 @@ public class Stack<E> {
         return array.get(top);
     }
 
-    int top() {
+    public int top() {
         if (isEmpty()) System.out.println("Empty stack");
         return top;
     }
 
-    void pop() {
-        if (isEmpty()) System.out.println("Empty stack");
-        else top--;
+    public E pop() {
+        if (isEmpty()) {
+            System.out.println("Empty stack");
+            return null;
+        } else return array.get(top--);
     }
 
-    void clear() {
+    public void clear() {
         while (!isEmpty()) this.pop();
     }
 
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return top == -1;
     }
 
-    boolean isFull() {
+    public boolean isFull() {
         return top == size - 1;
     }
 
-    int size() {
+    public int size() {
         return array.size();
     }
 
-    boolean search(E target) {
+    public boolean search(E target) {
         return IntStream.rangeClosed(0, top).anyMatch(i -> array.get(i) == target);
     }
 
-    void invert() {
+    public void invert() {
         if (isEmpty()) {
             System.out.println("Empty stack");
             return;
@@ -76,7 +78,7 @@ public class Stack<E> {
         array = aux;
     }
 
-    void printElements() {
+    public void printElements() {
         if (isEmpty()) {
             System.out.println("Empty stack.");
             return;

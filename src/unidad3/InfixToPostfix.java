@@ -1,6 +1,7 @@
 package unidad3;
 
-import java.util.Stack;
+
+import unidad3.stack.Stack;
 
 /**
  * @author Pedro Ayon
@@ -17,25 +18,25 @@ public class InfixToPostfix {
 
     static String infixToPostfix(String exp) {
         StringBuilder result = new StringBuilder();
-        Stack<Character> stack = new Stack<>();
+        Stack<Character> stack = new Stack<>(100);
         for (int i = 0; i < exp.length(); i++) {
             char c = exp.charAt(i);
             if (Character.isLetterOrDigit(c)) result.append(c);
             else if (c == '(') stack.push(c);
             else if (c == ')') {
-                while (!stack.isEmpty() && stack.peek() != '(') result.append(stack.pop());
+                while (!stack.isEmpty() && stack.lastElement() != '(') result.append(stack.pop());
                 if (!stack.isEmpty()) {
-                    if (stack.peek() == '(') stack.pop();
+                    if (stack.lastElement() == '(') stack.pop();
                     else return "Invalid expression";
                 }
                 else return "Invalid expression";
             } else {
-                while (!stack.isEmpty() && precedence(c) <= precedence(stack.peek())) result.append(stack.pop());
+                while (!stack.isEmpty() && precedence(c) <= precedence(stack.lastElement())) result.append(stack.pop());
                 stack.push(c);
             }
         }
         while (!stack.isEmpty()) {
-            if (stack.peek() == '(')
+            if (stack.lastElement() == '(')
                 return "Invalid Expression";
             result.append(stack.pop());
         }
