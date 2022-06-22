@@ -1,4 +1,4 @@
-package unidad4.graphs;
+package unidad4.graphs.adjacency_matrix_graph;
 
 import java.util.ArrayList;
 

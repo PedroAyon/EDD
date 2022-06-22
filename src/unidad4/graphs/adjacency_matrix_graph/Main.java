@@ -1,4 +1,4 @@
-package unidad4.graphs;
+package unidad4.graphs.adjacency_matrix_graph;
 
 public class Main {
     public static void main(String[] args) {
